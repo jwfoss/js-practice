@@ -7,7 +7,7 @@
 Question: <input type="text" id="questionBox"><br>
 Username: <input type="text" id="usernameBox"><br>
 Password: <input type="password" id="passwordBox"<br>
-<input type="button" id="answer" value="Answer the question!" onclick="buttonClick();">
+<input type="button" id="answer" value="What is the answer?" onclick="buttonClick();">
 </div>
 <script>
     var password;
@@ -18,8 +18,8 @@ Password: <input type="password" id="passwordBox"<br>
     }
     function buttonClick() {
     password = document.getElementById("passwordBox").value;
-    document.getElementById("container").innerHTML = "Let me think ...";
-    setTimeout(showAnswer, 4000);
+    document.getElementById("container").innerHTML = "Let me think!";
+    setTimeout(showAnswer, 1000);
     }
 </script>
 </body>
